@@ -1,0 +1,70 @@
+<body class="ng-cloak">
+<div class="generic-container" ng-controller="BlogController as ctrl">
+
+<div class="formcontainer">
+<div class="Absolute-Center is-Responsive">
+			<div id="logo-container"></div>
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="form-group input-group">
+
+					<center>
+						<h3>
+							View New Blog</a>
+						</h3>
+					</center>
+				</div>
+	<br>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="myPage">Collaboration Center</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-left">
+							<li><a href="#">HOME</a></li>
+							<li><a href="#BlogView">Blog View</a></li>
+							
+				</ul>
+		</div>
+		</div>
+		</nav>
+
+				<form ng-submit="ctrl.submit()" name="myForm">
+					
+							<div class="form-group input-group">
+							<span class="input-group-addon"><i	class="glyphicon glyphicon-user"></i></span>
+							<input class="form-control" type="text" ng-model="ctrl.user.id" path='blogid' placeholder="Blog Id" />
+							
+						</div>
+						
+						<div class="form-group input-group">
+							<span class="input-group-addon"><i	class="glyphicon glyphicon-user"></i></span>
+							<input class="form-control" type="text" ng-model="ctrl.user.title" path='blogtitle' placeholder="Blog Title" />
+							
+						</div>
+						<div class="form-group input-group">
+							<span class="input-group-addon"><i
+								class="glyphicon glyphicon-comment"></i></span>
+							<input type=textarea ng-model="ctrl.user.description" path="blogdesc" class="form-control" placeholder="Blog Description" rows="20"/>
+						</div>
+							<button type="submit" class="btn btn-danger" style="width: 500px;">Register</button>
+							</div>
+						</form>
+
+
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	<script src="BlogController.js"></script>
+	<script src="BlogService.js"></script>
+	</body>
+	
